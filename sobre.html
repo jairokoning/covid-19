@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="public//favicon.png" />
+  <link rel="stylesheet" href="src/styles/global.css">
+  <link rel="stylesheet" href="src/styles/sobre.css">
+  <title>COVID-19: Fique informado</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__title">
+      <h1>COVID-19</h1>
+      <h1>CORONAVÍRUS</h1>
+    </div>    
+  </header>
+  
+  <div class="navbar" id="myNavbar">
+    <ul class="navbar__items">
+      <li class="navbar__item" >
+        <a href="/">
+          <i class="fa fa-home"></i> Home
+        </a>
+      </li>
+      <li class="navbar__item navbar__item-active">
+        <a href="sobre.html">
+          <i class="fa fa-info-circle"></i></i> Sobre
+        </a>
+      </li>
+      <li class="navbar__item">
+        <a href="contato.html">
+          <i class="fa fa-envelope"></i> Contato
+        </a>        
+      </li>
+      <li class="navbar__item">
+        <a href="saibamais.html">
+          <i class="fa fa-newspaper-o"></i> Saiba Mais
+        </a>        
+      </li>
+    </ul>
+  </div>
+
+  <section class="container">
+    <div class="content">
+      <div class="about">
+        <div class="about__me">
+          <h2>Um pouco sobre mim...</h2>
+          <img src="src/img/koning.jpeg" alt="">
+        </div>
+        <p>Olá, meu nome é Jairo Koning, sou formado em Análise e Desenvolvimento de Sistemas
+          pela UNOPAR - Universidade Norte do Paraná e iniciei os primeiros passos na área da
+          tecnologia em 2012 como Software Tester com uma breve passagem numa grande empresa de sistemas.
+          Em 2013 entrei numa outra empresa como Suporte de Sistemas. 
+        </p>
+        <p>Mas o meu sonho era trabalhar com desenvolvedor, por isso continuei me dedicando nos
+          meus estudos e no ano de 2015 a empresa na qual trabalhava como suporte me ofereceu uma vaga
+          como Desenvolvedor desktop. Agarrei esta oportunidade com as duas mãos e foi uma experiência
+          incrível.
+        </p>
+        <p>Em 2017 a empresa fez cortes de funcionários, e eu era um dos que estava nesta lista.
+          No começo foi algo difícil de compreender e aceitar, mas não me deixei abalar. Eu sabia que saber
+          programar em Delphi para desktop não era o suficiente para construir uma carreira sólida. Então
+          tomei a corajosa decisão de estudar desenvolvimento web. Sabia que tinha um caminho de pedras
+          pela frente, pois para desktop era necessário saber Delphi e banco de dados, mas para web as
+          coisas iam muito além com html, css, javascript, linguagem de backend etc. Mas, como gosto muito
+          de estudar e estava disposto a encarrar novos desafios e experiências, em pouco tempo estava
+          colocando em prática o que aprendia em cursos e/ou no youtube. E foi assim que no início de 2018
+          recebi a oportunidade de trabalhar como desenvolver web num grande comércio eletrônico.
+        </p>
+        <p>E não parei mais nos estudos. Hoje continuo dedicando parte do meu tempo estudando tecnologias atuais
+          como NodeJS, ReactJS e React Native. Para mim desenvolver software é hobbie, faço porque amo e tenho
+          paixão. Se você gostaria de saber algo a mais sobre mim, poderá visitar o meu 
+          <a href="https://www.linkedin.com/in/jairokoning" target="_blank">Linkedin</a> e me conhecer um pouco melhor.
+        </p>
+      </div>
+            
+    </div>
+  </section>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myNavbar");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+
+</body>
+</html>
+

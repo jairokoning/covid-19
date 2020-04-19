@@ -1,0 +1,35 @@
+
+
+.content {  
+  /* max-width: 720px;   */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.references {  
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+
+  background-color: #fff;
+  margin-top: 20px;
+  width: 720px;
+  
+}
+
+.references__title {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  background-color: lightgrey;
+  padding: 15px 0;
+  margin-bottom: 10px;
+}
+
+.references li {
+  font-size: 28px;
+  margin: 5px 30px;
+}

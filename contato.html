@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="public//favicon.png" />
+  <link rel="stylesheet" href="src/styles/global.css">
+  <link rel="stylesheet" href="src/styles/contato.css">
+  <title>COVID-19: Fique informado</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__title">
+      <h1>COVID-19</h1>
+      <h1>CORONAVÍRUS</h1>
+    </div>    
+  </header>
+  
+  <div class="navbar" id="myNavbar">
+    <ul class="navbar__items">
+      <li class="navbar__item" >
+        <a href="/">
+          <i class="fa fa-home"></i> Home
+        </a>
+      </li>
+      <li class="navbar__item">
+        <a href="sobre.html">
+          <i class="fa fa-info-circle"></i></i> Sobre
+        </a>
+      </li>
+      <li class="navbar__item navbar__item-active">
+        <a href="contato.html">
+          <i class="fa fa-envelope"></i> Contato
+        </a>        
+      </li>
+      <li class="navbar__item">
+        <a href="saibamais.html">
+          <i class="fa fa-newspaper-o"></i> Saiba Mais
+        </a>        
+      </li>
+    </ul>
+  </div>
+
+  <section class="container">    
+    <div class="content">
+        <div class="content__title">
+          <h3>Precisando de um desenvolver web? Entre em contato comigo!</h3>
+        </div>  
+        <!-- Do not change the code! -->
+        <a id="foxyform_embed_link_192239" href="http://br.foxyform.com/">foxyform</a>
+        <script type="text/javascript">
+        (function(d, t){
+          var g = d.createElement(t),
+              s = d.getElementsByTagName(t)[0];
+          g.src = "http://br.foxyform.com/js.php?id=192239&sec_hash=899eb79cd15&width=350px";
+          s.parentNode.insertBefore(g, s);
+        }(document, "script"));
+        </script>
+        <!-- Do not change the code! -->                
+    </div>
+  </section>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myNavbar");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+
+</body>
+</html>
+

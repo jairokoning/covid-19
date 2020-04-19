@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="public//favicon.png" />
+  <link rel="stylesheet" href="src/styles/global.css">
+  <link rel="stylesheet" href="src/styles/saibamais.css">
+  <title>COVID-19: Fique informado</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__title">
+      <h1>COVID-19</h1>
+      <h1>CORONAVÍRUS</h1>
+    </div>    
+  </header>
+  
+  <div class="navbar" id="myNavbar">
+    <ul class="navbar__items">
+      <li class="navbar__item" >
+        <a href="/">
+          <i class="fa fa-home"></i> Home
+        </a>
+      </li>
+      <li class="navbar__item">
+        <a href="sobre.html">
+          <i class="fa fa-info-circle"></i></i> Sobre
+        </a>
+      </li>
+      <li class="navbar__item">
+        <a href="contato.html">
+          <i class="fa fa-envelope"></i> Contato
+        </a>        
+      </li>
+      <li class="navbar__item navbar__item-active">
+        <a href="saibamais.html">
+          <i class="fa fa-newspaper-o"></i> Saiba Mais
+        </a>        
+      </li>
+    </ul>
+  </div>
+
+  <section class="container">
+    <div class="content">
+      <div class="references">
+        <div class="references__title">
+          <h2>Referências e fontes de pesquisas</h2>          
+        </div>      
+        <ul>
+          <li>
+            <a href="https://www.biologianet.com/doencas/covid-19.htm" target="_blank">
+              <i class="fa fa-book"></i> Biologia Net
+            </a>
+          </li>
+          <li>
+            <a href="https://g1.globo.com/pr/parana/noticia/2020/03/16/portal-com-informacoes-sobre-o-novo-coronavirus-da-orientacoes-para-prevenir-doenca.ghtml" target="_blank">
+              <i class="fa fa-book"></i> G1 Globo.com
+            </a>
+          </li>
+          <li>
+            <a href="https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/04/02/vacina-contra-covid-19-esta-perto-de-ser-testada-em-humanos-em-israel.htm" target="_blank">
+              <i class="fa fa-book"></i> Uol Noticias
+            </a>
+          </li>
+          <li>
+            <a href="https://gauchazh.clicrbs.com.br/fique-bem/noticia/2020/04/o-medo-maior-foi-porque-a-gente-sabe-da-estatistica-conta-vinicius-medico-de-40-anos-infectado-por-coronavirus-ck8kmvq0m01e701pm50tzxc5h.html" target="_blank">
+              <i class="fa fa-book"></i> GauchaZH ClicRBS
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=0JOpKhCu_SA" target="_blank">
+              <i class="fa fa-youtube-play"></i> Youtube - TV Brasil
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=OONJJ_r4JOg" target="_blank">
+              <i class="fa fa-youtube-play"></i> Youtube - O Antagonista
+            </a>
+          </li>
+        </ul>
+      </div>
+
+            
+    </div>
+  </section>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myNavbar");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+
+</body>
+</html>
+
