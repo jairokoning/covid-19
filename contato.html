@@ -45,18 +45,15 @@
     <div class="content">
         <div class="content__title">
           <h3>Precisando de um desenvolver web? Entre em contato comigo!</h3>
-        </div>  
-        <!-- Do not change the code! -->
-        <a id="foxyform_embed_link_192239" href="http://br.foxyform.com/">foxyform</a>
-        <script type="text/javascript">
-        (function(d, t){
-          var g = d.createElement(t),
-              s = d.getElementsByTagName(t)[0];
-          g.src = "http://br.foxyform.com/js.php?id=192239&sec_hash=899eb79cd15&width=350px";
-          s.parentNode.insertBefore(g, s);
-        }(document, "script"));
-        </script>
-        <!-- Do not change the code! -->                
+        </div>
+        <form name="contact" netlify>
+          <input name="sender_name" type="text" placeholder="Nome">
+          <input name="email" type="email" placeholder="E-mail">
+          <input name="subject" type="text" placeholder="Assunto">
+          <textarea name="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
+          <button type="submit" class="button">Enviar mensagem</button>
+        </form>  
+              
     </div>
   </section>
 
@@ -78,3 +75,17 @@
 </body>
 </html>
 
+
+
+
+        <!-- Do not change the code! -->
+        <!-- <a id="foxyform_embed_link_192239" href="http://br.foxyform.com/">foxyform</a>
+        <script type="text/javascript">
+        (function(d, t){
+          var g = d.createElement(t),
+              s = d.getElementsByTagName(t)[0];
+          g.src = "http://br.foxyform.com/js.php?id=192239&sec_hash=899eb79cd15&width=350px";
+          s.parentNode.insertBefore(g, s);
+        }(document, "script"));
+        </script> -->
+        <!-- Do not change the code! -->  
